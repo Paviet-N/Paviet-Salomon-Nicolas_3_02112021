@@ -1,0 +1,19 @@
+{
+  "name": "p3_paviet-salomon_nicolas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass" : "sass --watch ./sass/main.scss:./css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Paviet-N/Paviet-Salomon-Nicolas_3_02112021.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Paviet-N/Paviet-Salomon-Nicolas_3_02112021/issues"
+  },
+  "homepage": "https://github.com/Paviet-N/Paviet-Salomon-Nicolas_3_02112021#readme"
+}
