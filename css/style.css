@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 #blocHeaderAccueil {
   width: auto;
   height: 113px;
@@ -50,12 +54,28 @@ body {
   width: 82%;
   height: 80%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 #reservation #blocReservation h2 {
   font-size: 1.6em;
+  margin: 0;
 }
 #reservation #blocReservation p {
   font-size: 1.1em;
+}
+#reservation #blocReservation #buttonExplore {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 218px;
+  border-radius: 30px;
+  background: linear-gradient(#FF79DA, #9356DC);
+  margin-top: 10px;
+  font-weight: bold;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
