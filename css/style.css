@@ -78,4 +78,60 @@ a {
   color: white;
 }
 
+#functioning {
+  height: 440px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#functioning #conteneurFunctioning {
+  height: 335px;
+}
+#functioning #conteneurFunctioning h2 {
+  margin-top: 0;
+}
+#functioning #conteneurFunctioning #blocFunctioning {
+  height: 275px;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+#functioning #conteneurFunctioning #blocFunctioning .blocInternFunctioning {
+  height: 75px;
+  width: 322px;
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.11);
+}
+#functioning #conteneurFunctioning #blocFunctioning .blocInternFunctioning .numeroListFunctioning {
+  color: white;
+  background-color: #9356DC;
+  border-radius: 30px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: -10px;
+  margin-right: 20px;
+}
+#functioning #conteneurFunctioning #blocFunctioning .blocInternFunctioning p {
+  font-weight: bold;
+}
+#functioning #conteneurFunctioning #blocFunctioning .blocInternFunctioning i {
+  opacity: 0.5;
+  margin-right: 20px;
+}
+#functioning #conteneurFunctioning #blocFunctioning .addStyleColor {
+  background-color: #f5edff;
+}
+#functioning #conteneurFunctioning #blocFunctioning .addStyleColor i {
+  color: #9356DC;
+  opacity: 1;
+}
+
 /*# sourceMappingURL=style.css.map */
