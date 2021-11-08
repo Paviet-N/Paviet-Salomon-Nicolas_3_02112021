@@ -153,3 +153,73 @@
     }
     
 }
+
+#restaurants{
+    height: 1226px;
+    background-color: $back-color-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    #conteneurRestaurants{
+        height: 1104px;
+        width: 340px;
+        h2{
+            margin-top: 0;
+        }
+        #blocRestaurant{
+            height: 1058px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .blocInternRestaurant{
+                height: 251px;
+                width: 340px;
+                border-radius: 20px;
+                box-shadow: 0px 7px 5px -2px rgba(0,0,0,0.11);
+                display: flex;
+                flex-direction: column;
+                
+                .blocImgRestaurant{
+                    height: 174px;
+                    border-radius: 20px 20px 0px 0px;
+                    img{
+                        object-fit: cover;
+                        height: 174px;
+                        width: 100%;
+                        border-radius: 20px 20px 0px 0px;
+                    }
+                }
+                .blocUnderImg{
+                    height: 77px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    .blocTitleRestaurant{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        height: 42px;
+                        width: 280px;
+                        h3{
+                            margin: 0;
+                        }
+                        p{
+                            margin: 0;
+                        }
+                    }
+                    .blocLike{
+                        height: 40px;
+                        width: 40px;
+                        
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i{
+                            scale: 1.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

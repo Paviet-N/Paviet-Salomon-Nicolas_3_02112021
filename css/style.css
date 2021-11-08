@@ -134,4 +134,72 @@ a {
   opacity: 1;
 }
 
+#restaurants {
+  height: 1226px;
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#restaurants #conteneurRestaurants {
+  height: 1104px;
+  width: 340px;
+}
+#restaurants #conteneurRestaurants h2 {
+  margin-top: 0;
+}
+#restaurants #conteneurRestaurants #blocRestaurant {
+  height: 1058px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+#restaurants #conteneurRestaurants #blocRestaurant .blocInternRestaurant {
+  height: 251px;
+  width: 340px;
+  border-radius: 20px;
+  box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.11);
+  display: flex;
+  flex-direction: column;
+}
+#restaurants #conteneurRestaurants #blocRestaurant .blocInternRestaurant .blocImgRestaurant {
+  height: 174px;
+  border-radius: 20px 20px 0px 0px;
+}
+#restaurants #conteneurRestaurants #blocRestaurant .blocInternRestaurant .blocImgRestaurant img {
+  object-fit: cover;
+  height: 174px;
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+}
+#restaurants #conteneurRestaurants #blocRestaurant .blocInternRestaurant .blocUnderImg {
+  height: 77px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#restaurants #conteneurRestaurants #blocRestaurant .blocInternRestaurant .blocUnderImg .blocTitleRestaurant {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 42px;
+  width: 280px;
+}
+#restaurants #conteneurRestaurants #blocRestaurant .blocInternRestaurant .blocUnderImg .blocTitleRestaurant h3 {
+  margin: 0;
+}
+#restaurants #conteneurRestaurants #blocRestaurant .blocInternRestaurant .blocUnderImg .blocTitleRestaurant p {
+  margin: 0;
+}
+#restaurants #conteneurRestaurants #blocRestaurant .blocInternRestaurant .blocUnderImg .blocLike {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#restaurants #conteneurRestaurants #blocRestaurant .blocInternRestaurant .blocUnderImg .blocLike i {
+  scale: 1.5;
+}
+
 /*# sourceMappingURL=style.css.map */
