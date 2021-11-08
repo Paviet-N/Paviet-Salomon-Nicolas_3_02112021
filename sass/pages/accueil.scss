@@ -1,0 +1,69 @@
+#blocHeaderAccueil
+{
+    width: auto;
+    height: 113px;
+    
+    display: grid;
+    grid-template-rows: 63px 50px;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+    "logo"
+    "localisation";
+
+        #blocHeaderTitle
+        {
+            grid-area: logo;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+                img
+                {
+                    width: 164px;
+                    height: auto;
+                }
+        }
+        #blocHeaderLocalisation
+        {
+            grid-area: localisation;
+            display: flex;
+            justify-content: center;
+            
+            background: linear-gradient(#cfcfcf,1px,#d4d4d4,2px,#dcdcdc,3px,#e3e3e3,4px,#e8e8e8,5px,#eaeaea);
+                #blocTextLocalisation
+                {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    height: auto;
+                        i{
+                            margin-right: 18px;
+                            margin-left: -18px;
+                        }
+                    
+                }
+        }
+}
+
+#reservation
+{
+    height: 287px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f6f6f6;
+    #blocReservation
+    {
+        width: 82%;
+        height: 80%;
+        text-align: center;
+        h2{
+           font-size: 1.6em; 
+        }
+        p{
+            font-size: 1.10em;
+        }
+       
+    }
+}

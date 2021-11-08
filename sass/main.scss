@@ -1,56 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-/*****HEADER*****/
-#blocHeader
-{
-    width: auto;
-    height: 113px;
-    
-    display: grid;
-    grid-template-rows: 63px 50px;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "logo"
-    "localisation";
+@import "./base/fondation";
+@import "./pages/accueil.scss";
 
-        #blocHeaderTitle
-        {
-            grid-area: logo;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-                img
-                {
-                    width: 164px;
-                    height: auto;
-                }
-        }
-        #blocHeaderLocalisation
-        {
-            grid-area: localisation;
-            display: flex;
-            justify-content: center;
-            
-            background: linear-gradient(#cfcfcf,1px,#d4d4d4,2px,#dcdcdc,3px,#e3e3e3,4px,#e8e8e8,5px,#eaeaea);
-                #blocTextLocalisation
-                {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    
-                    height: auto;
-                        i{
-                            margin-right: 18px;
-                            margin-left: -18px;
-                        }
-                    
-                }
-        }
-}
 
-body{
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-  
-}
