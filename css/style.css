@@ -8,6 +8,7 @@ body {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 #blocHeaderAccueil {
@@ -32,12 +33,13 @@ a {
   grid-area: localisation;
   display: flex;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(#cfcfcf, 1px, #d4d4d4, 2px, #dcdcdc, 3px, #e3e3e3, 4px, #e8e8e8, 5px, #eaeaea);
 }
 #blocHeaderAccueil #blocHeaderLocalisation #blocTextLocalisation {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: auto;
 }
 #blocHeaderAccueil #blocHeaderLocalisation #blocTextLocalisation i {
@@ -182,8 +184,8 @@ a {
   height: 30px;
   width: 80px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   background-color: #99e2d0;
   color: #008766;
   font-weight: bold;
@@ -216,10 +218,7 @@ a {
   justify-content: center;
   align-items: center;
 }
-#restaurants #conteneurRestaurants #blocRestaurant .blocInternRestaurant .blocUnderImg .blocLike a {
-  color: black;
-}
-#restaurants #conteneurRestaurants #blocRestaurant .blocInternRestaurant .blocUnderImg .blocLike a i {
+#restaurants #conteneurRestaurants #blocRestaurant .blocInternRestaurant .blocUnderImg .blocLike i {
   font-size: 1.5em;
 }
 

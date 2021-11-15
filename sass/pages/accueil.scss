@@ -13,10 +13,7 @@
         #blocHeaderTitle
         {
             grid-area: logo;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
+            @include flexBox_center;
                 img
                 {
                     width: 164px;
@@ -26,15 +23,12 @@
         #blocHeaderLocalisation
         {
             grid-area: localisation;
-            display: flex;
-            justify-content: center;
+            @include flexBox_center;
             
             background: linear-gradient(#cfcfcf,1px,#d4d4d4,2px,#dcdcdc,3px,#e3e3e3,4px,#e8e8e8,5px,#eaeaea);
                 #blocTextLocalisation
                 {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    @include flexBox_center;
                     
                     height: auto;
                         i{
@@ -49,9 +43,7 @@
 #reservation
 {
     height: 287px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexBox_center;
     background-color: $back-color-grey;
     #blocReservation
     {
@@ -73,9 +65,7 @@
         }
         #buttonExplore
         {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flexBox_center;
             height: 50px;
             width: 218px;
             border-radius : 30px;
@@ -91,9 +81,7 @@
 #functioning
 {
     height: 440px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexBox_center;
     #conteneurFunctioning
     {
         height: 335px;
@@ -126,9 +114,7 @@
                     border-radius: 30px;
                     width: 24px;
                     height: 24px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flexBox_center;
                     margin-left: -10px;
                     margin-right: 20px;
                 }
@@ -157,9 +143,7 @@
 #restaurants{
     height: 1226px;
     background-color: $back-color-grey;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexBox_center;
     #conteneurRestaurants{
         height: 1104px;
         width: 340px;
@@ -195,9 +179,7 @@
                         position: absolute;
                         height: 30px;
                         width: 80px;
-                        display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        @include flexBox_center;
                         background-color: $back-new-color;
                         color: $text-new-color;
                         font-weight: bold;
@@ -208,9 +190,7 @@
                 }
                 .blocUnderImg{
                     height: 77px;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    @include flexBox_center;
                     .blocTitleRestaurant{
                         display: flex;
                         flex-direction: column;
@@ -227,17 +207,12 @@
                     .blocLike{
                         height: 40px;
                         width: 40px;
-                        
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        a{
-                            color: black;
-                             i{
-                            font-size: 1.5em;
-                            }
-                           
+                        @include flexBox_center;
+                        i{
+                        font-size: 1.5em;
                         }
+                           
+                        
                     }
                 }
             }
