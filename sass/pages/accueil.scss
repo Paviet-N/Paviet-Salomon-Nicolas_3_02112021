@@ -182,11 +182,28 @@
                 .blocImgRestaurant{
                     height: 174px;
                     border-radius: 20px 20px 0px 0px;
+                    position: relative;
+                    text-align: center;
+                    color: greenyellow;
                     img{
                         object-fit: cover;
                         height: 174px;
                         width: 100%;
                         border-radius: 20px 20px 0px 0px;
+                    }
+                    .textNew{
+                        position: absolute;
+                        height: 30px;
+                        width: 80px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background-color: $back-new-color;
+                        color: $text-new-color;
+                        font-weight: bold;
+                        top:8%;
+                        left: 73%;
+                        
                     }
                 }
                 .blocUnderImg{
@@ -214,8 +231,12 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        i{
-                            scale: 1.5;
+                        a{
+                            color: black;
+                             i{
+                            font-size: 1.5em;
+                            }
+                           
                         }
                     }
                 }

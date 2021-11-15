@@ -1,0 +1,35 @@
+footer
+{
+    background-color: $footer-color;
+    color: white;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    #blocFooter
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 145px;
+        margin-left: 20px;
+        font-weight: bold;
+        h4
+        {
+            font-family: 'Shrikhand', cursive;
+            margin-top: 0 ;
+            font-size: 1.1em;
+        }
+        a
+        {
+            color: white;
+            &:hover
+            {
+            text-decoration: underline;
+            }
+        }
+        i{
+            width: 20px;
+        }
+    }
+   
+}
