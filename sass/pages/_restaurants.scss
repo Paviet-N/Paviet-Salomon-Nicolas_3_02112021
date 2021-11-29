@@ -1,0 +1,103 @@
+#blocHeaderRestaurants
+{
+    height: 365px;
+    
+    #blocLogoAndArrow
+    {
+        height: 63px;
+        @include flexBox_center;
+        #arrow
+        {
+            i
+            {
+                scale: 1.5;
+                margin-left: -50px;
+                
+            }
+        }
+        #logo 
+        {
+            img
+            {
+                width: 164px;
+                height: auto;
+            }
+        }
+        
+    }
+    #imgHeader
+    {
+        height: 302px;
+        img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            
+        }
+    }
+}
+
+#containerMain
+{
+    height: 1160px;
+    border-radius: 40px 40px 0px 0px;
+    background-color: $back-color-grey;
+    margin-top: -40px;
+    position: relative;
+    
+   
+    
+    #titleMenuAndHeart
+    {
+        height: 90px;
+        margin : 0px 5% 0px 5%;
+        border-radius: 40px 40px 0px 0px;
+        background-color: $back-color-grey;
+        @include flexBox_rowSpaceBetween;
+        #titleMenu
+        {
+            
+            h2{
+                font-family: Shrikhand,"cursive";
+            }
+        }
+        #heart
+        {
+            
+            i{
+                scale: 1.5;
+            }
+        }
+        
+    }
+    .sectionMenu
+    {
+        height: 310px;
+        background-color: $back-color-grey;
+        margin : 0px 5% 0px 5%;
+        .typeMenu{
+            height: 40px;
+            h3{
+                margin: 0;
+                font-weight: 300;
+            }
+            
+        }
+        .containerMenu{
+            height: 270px;
+            
+           @include flexBox_columnSpaceAround;
+            .blocMenu{
+                height: 68px;
+                width: 349px;
+                
+            }
+        }
+    }
+    #blocButton{
+        height: 140px;
+        background-color: $back-color-grey;
+        
+    }
+
+}
