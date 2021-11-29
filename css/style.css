@@ -293,7 +293,7 @@ a {
 #containerMain .sectionMenu {
   height: 310px;
   background-color: #f6f6f6;
-  margin: 0px 5% 0px 5%;
+  margin: 0px 5% 20px 5%;
 }
 #containerMain .sectionMenu .typeMenu {
   height: 40px;
@@ -301,6 +301,11 @@ a {
 #containerMain .sectionMenu .typeMenu h3 {
   margin: 0;
   font-weight: 300;
+}
+#containerMain .sectionMenu .typeMenu .underline {
+  height: 3px;
+  width: 40px;
+  background-color: #99e2d0;
 }
 #containerMain .sectionMenu .containerMenu {
   height: 270px;
@@ -312,9 +317,11 @@ a {
 #containerMain .sectionMenu .containerMenu .blocMenu {
   height: 68px;
   width: 349px;
+  background-color: white;
+  border-radius: 20px;
 }
 #containerMain #blocButton {
-  height: 140px;
+  height: 120px;
   background-color: #f6f6f6;
 }
 
@@ -324,6 +331,7 @@ footer {
   height: 200px;
   display: flex;
   align-items: center;
+  position: relative;
 }
 footer #blocFooter {
   display: flex;

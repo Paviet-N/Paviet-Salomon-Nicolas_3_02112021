@@ -74,30 +74,38 @@
     {
         height: 310px;
         background-color: $back-color-grey;
-        margin : 0px 5% 0px 5%;
+        margin : 0px 5% 20px 5%;
+
         .typeMenu{
             height: 40px;
             h3{
                 margin: 0;
                 font-weight: 300;
             }
+            .underline{
+                height: 3px;
+                width: 40px;
+                background-color: $back-new-color;
+            }
             
         }
         .containerMenu{
             height: 270px;
+           
             
            @include flexBox_columnSpaceAround;
             .blocMenu{
                 height: 68px;
                 width: 349px;
+                background-color: white;
+                border-radius: 20px;
                 
             }
         }
     }
     #blocButton{
-        height: 140px;
+        height: 120px;
         background-color: $back-color-grey;
-        
     }
 
 }
