@@ -95,10 +95,27 @@
             
            @include flexBox_columnSpaceAround;
             .blocMenu{
+                @include flexBox_rowSpaceBetween;
                 height: 68px;
                 width: 349px;
                 background-color: white;
                 border-radius: 20px;
+                box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.11);
+                .textBlocMenu{
+                    margin-left: 5%;
+                }
+                .prix{
+                    margin-right: 5%;
+                    margin-top: 20px;
+                    font-weight: bold;
+                }
+                h4{
+                    margin: 0;
+                }
+                p{
+                    margin: 0;
+                    font-size: 0.85rem;
+                }
                 
             }
         }
