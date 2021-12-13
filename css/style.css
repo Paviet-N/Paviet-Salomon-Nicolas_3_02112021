@@ -440,7 +440,7 @@ a {
   font-size: 0.85rem;
 }
 #containerMain #blocButton {
-  height: 5px;
+  height: 120px;
   background-color: #f6f6f6;
 }
 
@@ -472,6 +472,10 @@ footer #blocFooter a:hover {
 }
 footer #blocFooter i {
   width: 20px;
+}
+
+.spacing {
+  margin-top: 110px;
 }
 
 /*# sourceMappingURL=style.css.map */
