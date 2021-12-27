@@ -1,3 +1,4 @@
+
 #blocHeaderAccueil
 {
     width: auto;
@@ -182,11 +183,7 @@
                     transition: ease-in-out 0.25s;
                     
                 }
-                &:active{
-                    & > .lds-spinner{
-                        animation: lds-spiner 4000ms;
-                    }
-                }
+               
                 
                 .blocImgRestaurant{
                     height: 174px;
