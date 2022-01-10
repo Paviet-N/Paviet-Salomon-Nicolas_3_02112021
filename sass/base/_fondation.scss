@@ -1,28 +1,25 @@
-
-
-body, html {
+body,
+html {
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   scroll-behavior: smooth;
 }
-  
-  .container {
-    max-width: 1280px;
-    margin: auto;
-    position: relative;
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+  position: relative;
+}
+
+.header {
+  padding: 1rem $appPadding;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1000;
+
+  &__logo {
+    font-family: "Shrikhand", "cursive";
+    margin: 0;
+    text-align: center;
   }
-  
-  .header {
-    padding: 1rem $appPadding;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
-    position: relative;
-    z-index: 1000;
-  
-    &__logo {
-      font-family: "Shrikhand", "cursive";
-      margin: 0;
-      text-align: center;
-    }
-  }
-  
-  
+}
