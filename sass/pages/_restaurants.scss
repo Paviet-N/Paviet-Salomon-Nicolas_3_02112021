@@ -1,129 +1,130 @@
-#blocHeaderRestaurants
-{
-    height: 365px;
-    
-    #blocLogoAndArrow
-    {
-        height: 63px;
-        @include flexBox_center;
-        #arrow
-        {
-            i
-            {
-                scale: 1.5;
-                margin-left: -50px;
-                
-            }
-        }
-        #logo 
-        {
-            img
-            {
-                width: 164px;
-                height: auto;
-            }
-        }
-        
+.header {
+    &--withBackArrow {
+      position: relative;
     }
-    #imgHeader
-    {
-        height: 302px;
-        img{
-            object-fit: cover;
-            height: 100%;
-            width: 100%;
-            
-        }
+  
+    &__arrow {
+      position: absolute;
+      left: 2rem;
+      height: 2rem;
+      width: 2rem;
+      top: 50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transform: translateY(-50%);
+      font-size: 1.2rem;
+      color: black;
     }
-}
-
-#containerMain
-{
-    height: 1160px;
-    border-radius: 40px 40px 0px 0px;
-    background-color: $back-color-grey;
-    margin-top: -40px;
+  }
+  
+  .restoImg {
+    max-width: 100%;
+    max-height: 18rem;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .menu {
+    margin-top: -4rem;
+    border-radius: 2rem 2rem 0 0;
+    background-color: #f6f6f6;
+    z-index: 1;
     position: relative;
-    
-   
-    
-    #titleMenuAndHeart
-    {
-        height: 90px;
-        margin : 0px 5% 0px 5%;
-        border-radius: 40px 40px 0px 0px;
-        background-color: $back-color-grey;
-        @include flexBox_rowSpaceBetween;
-        #titleMenu
-        {
-            
-            h2{
-                font-family: Shrikhand,"cursive";
-            }
-        }
-        #heart
-        {
-            
-            i{
-                scale: 1.5;
-            }
-        }
-        
+  
+    &__header {
+      padding: 1rem 2rem 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
-    .sectionMenu
-    {
-        height: auto;
-        background-color: $back-color-grey;
-        margin : 0px 5% 20px 5%;
-
-        .typeMenu{
-            height: 40px;
-            h3{
-                margin: 0;
-                font-weight: 300;
-            }
-            .underline{
-                height: 3px;
-                width: 40px;
-                background-color: $back-new-color;
-            }
-            
-        }
-        .containerMenu{
-            height: auto;
-           
-            
-           @include flexBox_columnSpaceAround;
-            .blocMenu{
-                @include flexBox_rowSpaceBetween;
-                height: 68px;
-                width: 349px;
-                background-color: white;
-                border-radius: 20px;
-                margin-top: 20px;
-                box-shadow: 0px 7px 5px -2px rgba(0, 0, 0, 0.11);
-                .textBlocMenu{
-                    margin-left: 5%;
-                }
-                .prix{
-                    margin-right: 5%;
-                    margin-top: 20px;
-                    font-weight: bold;
-                }
-                h4{
-                    margin: 0;
-                }
-                p{
-                    margin: 0;
-                    font-size: 0.85rem;
-                }
-                
-            }
-        }
+  
+    &__title {
+      font-family: "Shrikhand", "cursive";
     }
-    #blocButton{
-        height: 120px;
-        background-color: $back-color-grey;
+  
+    &__btn {
+      height: 2rem;
+      width: 2rem;
+      background-color: transparent;
+      border: transparent 0px solid;
+      padding: 0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      cursor: pointer;
+      position: relative;
+      background-color: black;
+      
+      &:hover::before {
+        opacity: 1;
+      }
+      
+      &::before {
+        opacity: 0;
+        transition: 0.5s;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
+      }
     }
-
-}
+  
+    &__like {
+      transition-duration: .25s;
+      background-color: #f6f6f6;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      mix-blend-mode: lighten;
+    }
+  
+    &__btn:hover {
+      .menu__like {
+        &--noBg {
+          opacity: 0;
+        }
+      }
+    }
+  }
+  
+  .submenus {
+    display: grid;
+  
+    @media (min-width:64rem) {
+      grid-template-columns: repeat(3,1fr);
+      column-gap: 1rem;
+    }
+  }
+  
+  .submenu {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+  
+    &__title {
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 0.5rem;
+      font-weight: normal;
+  
+      &::after {
+        content: "";
+        width: 3rem;
+        height: 0.25rem;
+        background-color: $color-tertiary;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+      }
+    }
+  }
+  

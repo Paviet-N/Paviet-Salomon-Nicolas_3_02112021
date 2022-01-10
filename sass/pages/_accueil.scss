@@ -1,243 +1,202 @@
-
-#blocHeaderAccueil
-{
-    width: auto;
-    height: 113px;
-    
-    display: grid;
-    grid-template-rows: 63px 50px;
-    grid-template-columns: 1fr;
-    grid-template-areas: 
-    "logo"
-    "localisation";
-
-        #blocHeaderTitle
-        {
-            grid-area: logo;
-            @include flexBox_center;
-                img
-                {
-                    width: 164px;
-                    height: auto;
-                }
+  .local {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem $appPadding;
+    background: linear-gradient(#cfcfcf,1px,#d4d4d4,2px,#dcdcdc,3px,#e3e3e3,4px,#e8e8e8,5px,#eaeaea);
+    font-size: 1.2rem;
+    position: relative;
+  
+    &__icon {
+      margin-right: 1rem;
+    }
+  
+    &__input {
+        background-color: transparent;
+        border: transparent;
+        font-weight: bold;
+        width: 120px;
+        &::placeholder{
+           color: black;
+           opacity: 1; 
         }
-        #blocHeaderLocalisation
-        {
-            grid-area: localisation;
-            @include flexBox_center;
-            
-            background: linear-gradient(#cfcfcf,1px,#d4d4d4,2px,#dcdcdc,3px,#e3e3e3,4px,#e8e8e8,5px,#eaeaea);
-                #blocTextLocalisation
-                {
-                    @include flexBox_center;
-                    
-                    height: auto;
-                        i{
-                             margin-right: 18px;
-                        }
-                        #localisationInput{
-                            background-color: transparent;
-                            border: transparent;
-                            font-weight: bold;
-                            width: 120px;
-                            &::placeholder{
-                               color: black;
-                               opacity: 1; 
-                            }
-                        }
-                    
-                }
-        }
-}
-
-#reservation
-{
-    height: 287px;
-    @include flexBox_center;
-    background-color: $back-color-grey;
-    #blocReservation
-    {
-        width: 82%;
-        height: 80%;
-        text-align: center;
+    }
+  }
+  
+  .reservation {
+    padding: 2.5rem;
+    text-align: center;
+    background-color: #f6f6f6;
+  
+    &__title {
+      margin: 0;
+    }
+  
+    &__subtitle {
+      margin: 2rem 0;
+    }
+  
+    &__btn {
+      @include button(primary);
+    }
+  }
+  
+ 
+  .Functioning {
+    padding: ( $appPadding + 1rem ) $appPadding;
+  
+    &__title {
+      margin-top: 0;
+    }
+  
+    &__steps {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      counter-reset: compteListe;
+  
+      @media (min-width:64rem) {
         display: flex;
-        flex-direction: column;
+      }
+    }
+  
+    &__step {
+      padding: 1.5rem;
+      margin: 1rem 0 1rem 0.75rem;
+      box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+      border-radius: 1.25rem;
+      background-color: #f6f6f6;
+      display: flex;
+      position: relative;
+  
+      @media (min-width:64rem) {
+        flex: 1;
+        margin: 0;
+        margin-left: 2rem;
+  
+        &:first-child {
+          margin-left: 0.75rem;
+        }
+      }
+  
+      &:first-child {
+        margin-top: 0;
+      }
+  
+      &:last-child {
+        margin-bottom: 0;
+      }
+  
+      &::before {
+        counter-increment: compteListe 1;
+        content: counter(compteListe) " ";
+        background: $color-primary;
+        height: 1.5rem;
+        width: 1.5rem;
+        border-radius: 100px;
+        display: flex;
+        justify-content: center;
         align-items: center;
+        color: white;
+        position: absolute;
+        left: -0.75rem;
+      }
 
-
-        h2{
-           font-size: 1.6em; 
-           margin: 0;
-        }
-        p{
-            font-size: 1.10em;
-            
-        }
-        #buttonExplore
-        {
-            @include flexBox_center;
-            height: 50px;
-            width: 218px;
-            border-radius : 30px;
-            background: linear-gradient($secondaire-color,$primaire-color);
-            margin-top: 10px;
-            font-weight: bold;
-            box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.30);
-            color: white;
-         
-            &:hover{
-                filter: brightness(1.10);
-                box-shadow: 5px 5px 15px 1px rgba(0,0,0,0.40);
-            }
-        }
-       
+      &:hover{
+        background-color: #f5edff;
     }
-}
-
-#functioning
-{
-    height: 440px;
-    @include flexBox_center;
-    #conteneurFunctioning
-    {
-        height: 335px;
-        h2
-        {
-            margin-top: 0;
-        }
-        #blocFunctioning
-        {
-            height: 275px;
-            width: 340px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            align-items: center;
-            .blocInternFunctioning
-            {
-                height: 75px;
-                width: 322px;
-                display: flex;
-                align-items: center;
-                background-color: $back-color-grey;
-                border-radius: 20px;
-                box-shadow: 0px 7px 5px -2px rgba(0,0,0,0.11);
-                &:hover{
-                    background-color: #f5edff;
-                    i{
-                        color: $primaire-color;
-                        opacity: 1;
-                    }
-                }
-                    
-                .numeroListFunctioning
-                {
-                    color: white;
-                    background-color: $primaire-color;
-                    border-radius: 30px;
-                    width: 24px;
-                    height: 24px;
-                    @include flexBox_center;
-                    margin-left: -10px;
-                    margin-right: 20px;
-                }
-                p{
-                    font-weight: bold;  
-                }
-                i{
-                    opacity: 0.5;
-                    margin-right: 20px;
-                }
-            }
-            
-        }
     }
-    
-}
-
-#restaurants{
-    height: 1226px;
-    background-color: $back-color-grey;
-    @include flexBox_center;
-    #conteneurRestaurants{
-        height: 1104px;
-        width: 340px;
-        h2{
-            margin-top: 0;
-        }
-        #blocRestaurant{
-            height: 1058px;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            .blocInternRestaurant{
-                height: 251px;
-                width: 340px;
-                border-radius: 20px;
-                box-shadow: 0px 7px 5px -2px rgba(0,0,0,0.11);
-                display: flex;
-                flex-direction: column;
-                &:hover{
-                    opacity: 0.8;
-                    scale: 1.025;
-                    transition: ease-in-out 0.25s;
-                    
-                }
-               
-                
-                .blocImgRestaurant{
-                    height: 174px;
-                    border-radius: 20px 20px 0px 0px;
-                    position: relative;
-                    text-align: center;
-                    color: greenyellow;
-                    img{
-                        object-fit: cover;
-                        height: 174px;
-                        width: 100%;
-                        border-radius: 20px 20px 0px 0px;
-                    }
-                    .textNew{
-                        position: absolute;
-                        height: 30px;
-                        width: 80px;
-                        @include flexBox_center;
-                        background-color: $back-new-color;
-                        color: $text-new-color;
-                        font-weight: bold;
-                        top:8%;
-                        left: 73%;
-                        
-                    }
-                }
-                .blocUnderImg{
-                    height: 77px;
-                    @include flexBox_center;
-                    .blocTitleRestaurant{
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: space-between;
-                        height: 42px;
-                        width: 280px;
-                        h3{
-                            margin: 0;
-                        }
-                        p{
-                            margin: 0;
-                        }
-                    }
-                    .blocLike{
-                        height: 40px;
-                        width: 40px;
-                        @include flexBox_center;
-                        i{
-                        font-size: 1.5em;
-                        }
-                           
-                        
-                    }
-                }
-            }
-        }
+  
+    &__icon {
+      margin-right: 1rem;
+      color: #7e7e7e;
     }
-}
+
+   
+  }
+  
+  .restaurants {
+    background-color: #f6f6f6;
+    padding: ($appPadding + 1rem) $appPadding;
+  
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    column-gap: 2rem;
+    row-gap: 2rem;
+  
+    @media (min-width:64rem) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  .card {
+    background-color: white;
+    border-radius: 1rem;
+    position: relative;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    box-shadow: 0px 7px 5px -2px rgba(0,0,0,0.11);
+    &__img {
+      height: 12rem;
+      width: 100%;
+      border: transparent solid 0px;
+      border-radius: 1rem 1rem 0 0;
+      box-shadow: none;
+      object-fit: cover;
+
+    }
+  
+    &__badge {
+      background-color: $color-tertiary;
+      color: darken($color-tertiary, 50%);
+      font-weight: bold;
+      padding: 0.5rem;
+      border-radius: 0.125rem;
+      position: absolute;
+      top: 1rem;
+      right: 0.75rem;
+    }
+  
+    &__footer {
+      padding: 1rem;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+  
+    &__content {
+      flex: 1;
+    }
+  
+    &__title {
+      margin: 0;
+      margin-bottom: 0.25rem;
+    }
+  
+    &__subtitle {
+      margin: 0;
+    }
+  
+    &__btn {
+      height: 2rem;
+      width: 2rem;
+      background-color: transparent;
+      border: transparent 0px solid;
+      padding: 0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+  
+    &__like {
+      background-color: white!important;
+    }
+    &:hover{
+        opacity: 0.8;
+        scale: 1.025;
+        transition: ease-in-out 0.25s;
+    }
+  }
